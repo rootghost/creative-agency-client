@@ -1,0 +1,9 @@
+h6{
+    cursor: pointer;
+}
+.active{
+    color: #009444;
+}
+.dashboard-main{
+    background-color: #E5E5E5;
+}

@@ -1,0 +1,31 @@
+.login-box{
+    position: absolute;
+    width: 570px;
+    left: 435px;
+    top: 171px;
+
+    background: #FFFFFF;
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+h3{
+    text-align: center;
+    margin-top: 160px;
+}
+.sign-in-btn{
+   
+    height: 51px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    border-radius: 57px;
+    outline: none;
+    font-weight: bold;
+    width: 457px;
+    margin-left: 56px;
+    margin-top: 50px;
+}
+.btn-img{
+    width: 31px;
+    height: 31.74px;
+}
