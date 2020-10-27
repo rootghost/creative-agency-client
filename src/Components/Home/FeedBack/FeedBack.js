@@ -6,7 +6,7 @@ import FeedbackCard from './FeedbackCard/FeedbackCard';
 const FeedBack = () => {
     const [feedBack,setFeedback] = useState([])
     useEffect(()=>{
-        fetch("http://localhost:5000/feedback")
+        fetch("https://secret-garden-14792.herokuapp.com/feedback")
         .then(res => res.json())
         .then(data => setFeedback(data))
     },[])

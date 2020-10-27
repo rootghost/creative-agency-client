@@ -8,12 +8,12 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
-import AddData from './Components/Home/Home/AddData';
 import Login from './Components/Login/Login';
 import Dashboard from './Components/Dashboard/Dashboard';
 import { useState } from 'react';
 import { createContext } from 'react';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Nomatch from './Components/Nomatch/Nomatch';
 
 export const userContex = createContext()
 
@@ -26,8 +26,8 @@ function App() {
             <Route exact path="/">
                 <Home></Home>
             </Route>
-            <Route path="/data">
-                <AddData></AddData>
+            <Route path="/home">
+                <Home></Home>
             </Route>
             <Route path="/login">
                 <Login></Login>
@@ -35,6 +35,12 @@ function App() {
             <PrivateRoute path="/dashboard/:sreviceTitle">
                   <Dashboard></Dashboard>
             </PrivateRoute>
+            <PrivateRoute path="/dashboard">
+                  <Dashboard></Dashboard>
+            </PrivateRoute>
+            <Route path="*">
+                  <Nomatch></Nomatch>
+            </Route>
         </Switch>
       </Router>
    </userContex.Provider>

@@ -8,7 +8,7 @@ const ServiceCard = ({order}) => {
     const [service,setService] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/service?title=${serviceTitle}`)
+        fetch(`https://secret-garden-14792.herokuapp.com/service?title=${serviceTitle}`)
         .then(res => res.json())
         .then(data => {
             setService(data)
@@ -24,7 +24,7 @@ const ServiceCard = ({order}) => {
                         <img style={{height:"74px",width:"74px"}} src={`data:image/png;base64,${service[0]?service[0].image.img:""}`} alt=""/>
                     </div>
                     <div>
-                        <button className={status === "pending"?"btn btn-danger":"btn btn-success"}>{status ==="pending"?"Pending":"Done"}</button>
+                        <button className={status === "pending"?"btn btn-danger":"btn btn-success"}>{status}</button>
                     </div>
                 </div>
                     <div className="card-body">

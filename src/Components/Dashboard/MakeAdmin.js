@@ -9,7 +9,7 @@ const MakeAdmin = () => {
         setEmail(info)
     }
     const handleSubmit = (e) =>{
-        fetch("http://localhost:5000/addAdmin",{
+        fetch("https://secret-garden-14792.herokuapp.com/addAdmin",{
             method:"POST",
             headers:{"Content-type":"application/json"},
             body : JSON.stringify(email)

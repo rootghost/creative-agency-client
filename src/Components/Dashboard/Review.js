@@ -6,7 +6,7 @@ const Review = () => {
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = (data) =>{
        const info = {...data,image:"person"}
-       fetch("http://localhost:5000/addFeedback",{
+       fetch("https://secret-garden-14792.herokuapp.com/addFeedback",{
            method:"POST",
            headers:{"Content-type":"application/json"},
            body : JSON.stringify(info)

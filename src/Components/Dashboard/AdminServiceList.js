@@ -6,7 +6,7 @@ import ServiceTable from './ServiceTable';
 const AdminServiceList = () => {
     const [allService,setAllService] = useState([])
    useEffect(()=>{
-        fetch("http://localhost:5000/allorder")
+        fetch("https://secret-garden-14792.herokuapp.com/allorder")
         .then(res => res.json())
         .then(data =>{
             setAllService(data)
@@ -14,7 +14,7 @@ const AdminServiceList = () => {
    },[])
    
     return (
-        <div style={{backgroundColor:"white"}} className="p-3">
+        <div style={{backgroundColor:"white"}} className="p-3 table-responsive">
             <table className="table">
                 <thead class="thead-light">
                     <tr>

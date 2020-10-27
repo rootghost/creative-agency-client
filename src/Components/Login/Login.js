@@ -36,14 +36,16 @@ const Login = () => {
     }
     return (
         <div>
-            <div className="d-flex mt-5">
+            <div className="d-flex mt-5 mb-5">
                 <img className="mx-auto" style={{width:"150px",height:"47px"}} src={logo} alt=""/>
             </div>
-            <div className="login-box">
-                <h3 className="mt-5">Login with</h3>
-                <button onClick={handleSignIn} className="sign-in-btn mb-5"><img className="btn-img" src={google} alt=""/> Continue With Google</button>
-                <p className="text-center mb-5 font-weight-bold">Don't have an account?<span style={{color:"#3F90FC"}}>Create an acccount</span></p>
-            </div>
+           <div className="d-flex align-items-center justify-content-center">
+                <div className="login-box">
+                    <h3 className="mt-5">Login with</h3>
+                    <button onClick={handleSignIn} className="sign-in-btn mb-5"><img className="btn-img" src={google} alt=""/> Continue With Google</button>
+                    <p className="text-center mb-5 font-weight-bold">Don't have an account?<span onClick={handleSignIn}  style={{color:"#3F90FC",cursor:"pointer"}}>Create an acccount</span></p>
+                </div>
+           </div>
         </div>
     );
 };

@@ -33,11 +33,11 @@ const Dashboard = () => {
     }
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/orders?email=${isloggedIn.email}`)
+        fetch(`https://secret-garden-14792.herokuapp.com/orders?email=${isloggedIn.email}`)
         .then(res => res.json())
         .then(data => setAllOrder(data))
 
-        fetch("http://localhost:5000/admin",{
+        fetch("https://secret-garden-14792.herokuapp.com/admin",{
             method:"POST",
             headers:{'Content-type':'application/json'},
             body : JSON.stringify({email : isloggedIn.email})
@@ -56,7 +56,7 @@ const Dashboard = () => {
                 isAdmin? <DashboardHeader option={adminOption}></DashboardHeader>: <DashboardHeader option={option}></DashboardHeader>
             }
              <div className="container-fluid row mt-4">
-                    <div className="col-md-2">
+                    <div className="col-md-2 col-2">
                         <div>
                            <div className="mt-5">
                                { 
@@ -102,7 +102,7 @@ const Dashboard = () => {
                     }
                     {
                         isAdmin === true &&
-                        <div className="col-md-10 p-3 dashboard-main">
+                        <div className="col-md-10 col-10 p-3 dashboard-main">
                             {
                                 adminOption === "Service List" &&
                                 <AdminServiceList></AdminServiceList>

@@ -12,7 +12,7 @@ const OrderForm = ({service}) => {
 
      const onSubmit = data =>{
          const info = {...data,status : "pending"}
-         fetch("http://localhost:5000/addOrder",{
+         fetch("https://secret-garden-14792.herokuapp.com/addOrder",{
              method:"POST",
              headers : {"Content-type": "application/json"},
              body : JSON.stringify(info)

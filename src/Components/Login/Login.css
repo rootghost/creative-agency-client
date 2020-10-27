@@ -1,9 +1,6 @@
 .login-box{
-    position: absolute;
-    width: 570px;
-    left: 435px;
-    top: 171px;
-
+   
+    width: auto;
     background: #FFFFFF;
     border: 1px solid #ABABAB;
     box-sizing: border-box;
@@ -23,6 +20,7 @@ h3{
     font-weight: bold;
     width: 457px;
     margin-left: 56px;
+    margin-right: 56px;
     margin-top: 50px;
 }
 .btn-img{
