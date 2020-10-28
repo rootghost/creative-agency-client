@@ -9,7 +9,6 @@ add a review in the website from the dashboard section
 - There is an option for admin where an admin can add new service and admin also see
 the all order submitted by client.Admin can also make new admin as well.
 
-```diff
-+ this text is highlighted in green
-- this text is highlighted in red
-```
+##Technology
+- React -React Roouter -MongoDb 
+-Express js 
