@@ -10,5 +10,7 @@ add a review in the website from the dashboard section
 the all order submitted by client.Admin can also make new admin as well.
 
 ##Technology
-- React -React Roouter -MongoDb 
--Express js 
+- React
+- React Roouter 
+- MongoDb 
+- Express js - firebase
