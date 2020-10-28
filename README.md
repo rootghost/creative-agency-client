@@ -1,5 +1,5 @@
 # Creative Agency
-[website]: https://creative-agency-f9572.web.app/
+
 This is a simple website of a agency who provide various service to its client 
 
 
@@ -10,7 +10,7 @@ add a review in the website from the dashboard section
 - There is an option for admin where an admin can add new service and admin also see
 the all order submitted by client.Admin can also make new admin as well.
 
-##Technology
+## Technology
 - React
 - React Roouter 
 - MongoDb 
@@ -18,3 +18,5 @@ the all order submitted by client.Admin can also make new admin as well.
 - firebase
 - Material ui
 - Bootstrap
+
+[website]: https://creative-agency-f9572.web.app/
